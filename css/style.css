@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-attachment: #FFFFFF;
+}
+/* Header */
+.header1{
+    background-color: #FFFFFF;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.header1 img{
+    width: 20%;
+}
+
+/* Nav Bar */
+
+nav {
+    background-color: #00529F;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul li{
+    display: inline;
+    padding: 0 20px;
+    font-size: 18px;
+    
+}
+
+nav a{
+    text-decoration: none;
+    color: #FFFFFF;
+    
+}
+
+nav ul li:hover{
+    text-decoration: overline 2px;
+}
+
+
+/* Main Content */
+
+
+
+/* About Section */
+.about{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+.container .about h3{
+    font-size: 25px;
+    align-self: flex-start;
+    margin: 20px 20px;
+    
+
+}
+
+.container{
+    height: 100%;
+    display: flex;
+
+}
+.container .about{
+    flex: 1;
+    background-color: #E0E1E2;
+}
+
+
+.container .detail{
+    flex: 3;
+    
+}
+
+.about img{
+    padding-top: 20px;
+    width: 350px;
+    height: 380px;
+}
+
+.about p{
+    padding: 25px 20px 10px 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: justify;
+    
+}
+
+.about p span{
+    font-size: 23px;
+    text-decoration: solid;
+    font-weight: 500;
+    
+}
+
+.gallery{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.gallery img{
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+
+.about hr{
+    width: 70%;
+    margin: 20px;
+}
+
+/*  History, Achievements, Player*/
+
+.detail{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.detail div{
+   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.detail div h2{
+    margin: 20px 20px;
+    align-self: flex-start;
+
+}
+
+.detail div img{
+    width: 50%;
+}
+
+.detail div p{
+    padding: 25px 20px 10px 20px;
+    font-weight: 500;
+    line-height: 25px;
+    text-align: justify;
+}
+
+
+.detail  hr{
+    width: 50%;
+    align-self: center;
+    margin: 30px 0;
+}
+
+
+
+/* Footer */
+
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background-color: #00529F ; 
+}
+
+.contact h3{
+    padding-top: 20px;
+    color: #FFFFFF;
+}
+
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+
+.links ul li{
+    display: inline;
+    padding: 20px;
+}
+
+.links ul li img:hover{
+    border-bottom: #FFFFFF solid;
+}
+
+
+
+
+
+@media (max-width:700px){
+
+
+    .header1 img{
+        width: 50%;
+    }
+
+    nav{
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 200px;
+    }
+    nav ul a li{
+        overflow: hidden;
+        display: block;
+        padding: 15px;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .links{
+        justify-content: center;
+        flex-direction: column;
+        height: 100%;
+    }
+    
+    .links ul li{
+        flex-direction: column;
+    }
+
+    img{
+        max-width: 100%;
+    }
+    
+}
